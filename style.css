@@ -447,3 +447,38 @@ background: #321b46;
 color: #f3e8ff;
 border-color: #68418b;
 }
+#projects {
+    display: block;
+    overflow: hidden;
+}
+
+#projectsList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.project-item {
+    background: #241638;
+    border: 1px solid #6b4b91;
+    border-radius: 12px;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+}
+
+.project-item h3 {
+    color: #d8b4fe;
+    margin-bottom: 8px;
+}
+
+.project-item p {
+    margin-bottom: 8px;
+}
+
+.project-item a {
+    color: #c084fc;
+    text-decoration: none;
+}
