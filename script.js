@@ -234,5 +234,28 @@ educationData.forEach(function(item) {
 }
 
 }
+// DISPLAY PROJECTS
+const projectsList = document.getElementById("projectsList");
+
+if (projectsList && data.projects) {
+    projectsList.innerHTML = "";
+
+    data.projects.forEach(project => {
+        const projectBox = document.createElement("div");
+        projectBox.className = "project-item";
+
+        projectBox.innerHTML = `
+            <h3>${project.title}</h3>
+            <p>${project.description}</p>
+            <p>${project.technologies}</p>
+            <a href="${project.link}" target="_blank" rel="noopener noreferrer">
+                View Project
+            </a>
+        `;
+
+        projectsList.appendChild(projectBox);
+    });
+}
+
 
 loadPortfolioData();
